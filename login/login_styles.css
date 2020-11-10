@@ -1,0 +1,19 @@
+.login h1 a {
+	background-image: url(/wp-content/themes/d4tw-starter/login/login.png) !important;
+	width: 320px !important;
+	height: 47px !important;
+	-webkit-background-size: inherit !important; }
+
+.login form {
+	background: #dedede !important;
+}
+
+.login #backtoblog a, .login #nav a {
+	color: #ffffff !important;
+}
+
+body.login {
+	background-color: #000000 !important;
+}
+
+

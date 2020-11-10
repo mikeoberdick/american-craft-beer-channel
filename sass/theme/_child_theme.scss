@@ -1,0 +1,113 @@
+/*------------------------------------------------*/
+/*-------------------[FONTS]----------------------*/
+/*------------------------------------------------*/
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $primary;
+  font-family: $header;
+}
+
+h1 {  
+  font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+h2 {  
+  font-size: $mod_1*$mod_1*$mod_1 *1rem; 
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2 *$min_font);
+}
+h3 { 
+  font-size: $mod_1*$mod_1 *1rem;
+  @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+
+body {
+  color: #000;
+  font-family: $secondary;
+}
+
+/*------------------------------------------------*/
+/*--------------------[LINKS]---------------------*/
+/*------------------------------------------------*/
+
+a {
+  color: $primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#main-menu {
+  a {
+    font-family: $secondary;
+    color: $primary;
+  }
+}
+
+.mobileToggle {
+  color: $primary;
+}
+
+#logoLink {
+  max-width: 75%;
+}
+
+/*------------------------------------------------*/
+/*-------------------[BUTTONS]--------------------*/
+/*------------------------------------------------*/
+
+.btn {
+  font-family: $proxima-nova;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: .5rem 1.5rem;
+  white-space: normal;
+}
+
+.primary-button {
+  color: #fff !important;
+  background-color: $primary !important;
+  &:hover {
+    background-color: darken( $primary, 10% ) !important;
+    border: 0;
+    }
+}
+
+/*------------------------------------------------*/
+/*------------------[NINJA FORMS]-----------------*/
+/*------------------------------------------------*/
+
+.nf-form-cont {
+  label {
+    font-family: $secondary;
+    font-weight: normal !important;
+    color: #707070;
+  }
+  .ninja-forms-req-symbol, .nf-error-msg {
+    color: #707070 !important;
+  }
+  .nf-error-msg {
+    margin-bottom: 25px;
+  }
+  .nf-response-msg {
+      border: solid 1px $primary;
+      padding: 10px 25px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      p:last-of-type {
+        margin-bottom: 0;
+      }
+  }
+  input:not([type="button"]), textarea {
+    padding: 10px 15px;
+    border: solid 1px $primary !important;
+    border-radius: 5px !important;
+
+  }
+}
