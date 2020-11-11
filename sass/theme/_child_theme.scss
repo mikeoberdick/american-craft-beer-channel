@@ -8,8 +8,8 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  color: $primary;
-  font-family: $header;
+  font-family: $roboto-slab;
+  color: $dark-brown;
 }
 
 h1 {  
@@ -27,7 +27,37 @@ h3 {
 
 body {
   color: #000;
-  font-family: $secondary;
+  font-family: $roboto;
+}
+
+.roboto {
+  font-family: $roboto;
+}
+
+/*------------------------------------------------*/
+/*--------------------[HEADER]--------------------*/
+/*------------------------------------------------*/
+
+#wrapper-navbar {
+  background-color: $dark-brown;
+  #logoLink {
+    img {
+      width: 50%;
+    }
+  }
+  #main-menu {
+    li {
+      @include media-breakpoint-up(lg) {
+          margin-right: 3rem;    
+      } 
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        color: #fff;
+      }  
+    }
+  }
 }
 
 /*------------------------------------------------*/
@@ -35,7 +65,7 @@ body {
 /*------------------------------------------------*/
 
 a {
-  color: $primary;
+  color: $dark-brown;
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -44,13 +74,13 @@ a {
 
 #main-menu {
   a {
-    font-family: $secondary;
-    color: $primary;
+    font-family: $roboto-slab;
+    color: $dark-brown;
   }
 }
 
 .mobileToggle {
-  color: $primary;
+  color: $dark-brown;
 }
 
 #logoLink {
@@ -62,21 +92,76 @@ a {
 /*------------------------------------------------*/
 
 .btn {
-  font-family: $proxima-nova;
-  border: 3px solid transparent;
+  font-family: $roboto-slab;
   text-transform: uppercase;
-  border-radius: 5px;
-  padding: .5rem 1.5rem;
+  border-radius: 0;
+  padding: .5rem 3rem;
   white-space: normal;
+  background: $dark-brown;
+  color: $light-brown;
+  border: 5px solid $light-brown;
+  outline: 5px solid $dark-brown;
+  transition: all .5s;
+  &:hover {
+    background-color: $light-brown !important;
+    color: $dark-brown;
+    }
 }
 
-.primary-button {
-  color: #fff !important;
-  background-color: $primary !important;
-  &:hover {
-    background-color: darken( $primary, 10% ) !important;
-    border: 0;
+//HOMEPAGE
+
+#homepage {
+  #hero {
+
+  }
+  .left, .right {
+    position: relative;
+    flex: 0 0 100%;
+      @include media-breakpoint-up(lg) {
+        flex: 0 0 50%;
+        max-width: 50%;
     }
+  }
+  #one {
+    .right {
+      background-color: $light-brown;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+        padding: 2rem;
+      }
+    }
+  }
+  #two {
+    img {
+      @include media-breakpoint-up(lg) {
+        max-width: 16.67%;
+      }
+    }
+  }
+  #three {
+    .left {
+      background-color: $light-brown;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      @include media-breakpoint-down(md) {
+        order: 1;
+        text-align: center;
+        padding: 2rem;
+      }
+    }
+  }
+  .content-wrapper {
+    @include media-breakpoint-up(lg) {
+      max-width: 50%;
+      text-align: center;  
+    }
+  }
 }
 
 /*------------------------------------------------*/
@@ -85,7 +170,7 @@ a {
 
 .nf-form-cont {
   label {
-    font-family: $secondary;
+    font-family: $roboto;
     font-weight: normal !important;
     color: #707070;
   }
@@ -96,7 +181,7 @@ a {
     margin-bottom: 25px;
   }
   .nf-response-msg {
-      border: solid 1px $primary;
+      border: solid 1px $dark-brown;
       padding: 10px 25px;
       margin-bottom: 15px;
       border-radius: 5px;
@@ -106,8 +191,25 @@ a {
   }
   input:not([type="button"]), textarea {
     padding: 10px 15px;
-    border: solid 1px $primary !important;
+    border: solid 1px $dark-brown !important;
     border-radius: 5px !important;
 
+  }
+}
+
+/*------------------------------------------------*/
+/*--------------------[FOOTER]--------------------*/
+/*------------------------------------------------*/
+
+footer {
+  background-color: $dark-brown;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+  .watch-now {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: .375rem;
   }
 }

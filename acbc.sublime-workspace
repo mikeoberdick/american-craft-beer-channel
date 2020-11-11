@@ -1,0 +1,673 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get_style",
+				"get_stylesheet_uri"
+			],
+			[
+				"tran",
+				"translateX()\ttransform"
+			],
+			[
+				"pos",
+				"position-relative"
+			],
+			[
+				"get_stylesheet_direc",
+				"get_stylesheet_directory_uri"
+			],
+			[
+				"translate",
+				"translateY()\ttransform"
+			],
+			[
+				"transl",
+				"translateY()\ttransform"
+			],
+			[
+				"get_stylesheet_dire",
+				"get_stylesheet_directory_uri"
+			],
+			[
+				"justif",
+				"justify-content-center"
+			],
+			[
+				"get_stylesheet",
+				"get_stylesheet_uri"
+			],
+			[
+				"anna",
+				"anna-liisa-nixon"
+			],
+			[
+				"space",
+				"space-between\tjustify-content"
+			],
+			[
+				"wp_reset",
+				"wp_reset_postdata"
+			],
+			[
+				"trans",
+				"translateY()\ttransform"
+			],
+			[
+				"style",
+				"stylesheet_uri"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"reset_po",
+				"wp_reset_postdata"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"blog",
+				"bloginfo"
+			],
+			[
+				"down",
+				"small down\t@include media-breakpoint-down(sm) {  }"
+			],
+			[
+				"the_post",
+				"the_post_thumbnail"
+			],
+			[
+				"has_post",
+				"has_post_thumbnail"
+			],
+			[
+				"unsub",
+				"unsubscribe-confirmation"
+			],
+			[
+				"un",
+				"unsubscribe-confirmation"
+			],
+			[
+				"border-r",
+				"border-bottom-right-radius\tproperty"
+			],
+			[
+				"get_template",
+				"get_template_part"
+			],
+			[
+				"the",
+				"the_title"
+			],
+			[
+				"is_active",
+				"is_active_sidebar"
+			],
+			[
+				"wp_get_th",
+				"wp_get_theme"
+			],
+			[
+				"wp_ti",
+				"wp_title"
+			],
+			[
+				"wp_",
+				"wp_title"
+			],
+			[
+				"wp_enqueu",
+				"wp_enqueue_style"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_script"
+			],
+			[
+				"wrapper",
+				"wrapper-fluid"
+			],
+			[
+				"Dibar",
+				"DiBernardo"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublime",
+				"SublimeZilla: Import FileZilla Server"
+			],
+			[
+				"package control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/wp-content/themes/ACBC"
+	],
+	"file_history":
+	[
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/wp-content/themes/ACBC/templates/homepage.php",
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/.htaccess",
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/wp-config.php",
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/wp-content/themes/ACBC/templates/watch.php",
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/wp-content/themes/ACBC/templates/advertise.php",
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/wp-content/themes/ACBC/templates/submit.php",
+		"/E/Websites/_d4tw/American Craft Beer Channel/app/public/wp-content/themes/ACBC/style.css",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/single-attorney.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/our-team.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/single-news.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/news.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/js/scripts.js",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/footer.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/careers.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/sass/theme/_child_theme.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/single-practice-area.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/homepage.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/community-involvement.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/where-we-work.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/diversity-and-inclusion.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-config.php",
+		"/C/Users/Mike/AppData/Local/Temp/fz3temp-2/header.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/page.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/404.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/snippets/practice-areas.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/img/next_arrow.svg",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/practice-areas.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/understrap/page.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/sitemap.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/about.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/templates/location-hearse-page.php",
+		"/C/Users/Mike/Desktop/wp-config.php",
+		"/C/Users/Mike/Desktop/XML Sitemap_1.xml",
+		"/C/Users/Mike/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Mike/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/functions.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/functions/scripts.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/sass/theme/_child_theme_variables.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/src/sass/understrap/theme/_theme_variables.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/src/sass/understrap/theme/_theme.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/sass/child-theme.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/css/child-theme.css",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/src/sass/understrap/custom-editor-style.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/src/sass/understrap/theme.scss",
+		"/C/Users/Mike/AppData/Local/Temp/fz3temp-2/associates.php",
+		"/E/Websites/_lisi/sheeley/app/public/.htaccess",
+		"/E/Websites/_psc/Evidence Based Classroom Solutions/app/public/.htaccess",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/snippets/navigation-arrow.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/snippets/nexxt-arrow.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/header.php",
+		"/C/Users/Mike/Downloads/MyFontsWebfontsKit/MyFontsWebfontsKit/MyFontsWebfontsKit.css",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/css/web_fonts.css",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/inc/contact-form.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/inc/class-wp-bootstrap-navwalker.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/functions/custom_post_types.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/snippets/fast-facts.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/node_modules/uri-js/tests/qunit.js",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/inc/top.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/header.php",
+		"/C/Users/Mike/Downloads/vCard.vcf",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/vcard.php",
+		"/C/Users/Mike/Downloads/vCard (3).vcf",
+		"/C/Users/Mike/Downloads/vCard (1).vcf",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/template-vcard.php",
+		"/C/Users/Mike/Downloads/vCard (2).vcf",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/single-attorney.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/functions/custom_functions.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/snippets/news-byline.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/snippets/homepage-hero.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/functions/admin_modifications.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/template-offices.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/snippets/hero.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/understrap/inc/class-wp-bootstrap-navwalker.php",
+		"/C/Users/Mike/Desktop/header.php",
+		"/E/Websites/npm-law/app/public/wp-content/themes/wp-understrap/footer.php",
+		"/E/Websites/npm-law/app/public/wp-content/themes/understrap/footer.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/understrap/index.php",
+		"/E/Websites/npm-law/app/public/wp-content/themes/wp-understrap/templates/homepage.php",
+		"/C/Users/Mike/Downloads/MyFontsWebfontsKit/MyFontsWebfontsKit/web_fonts.css",
+		"/C/Users/Mike/Desktop/nginx.conf",
+		"/E/Websites/npm-law/app/public/wp-content/themes/wp-understrap/sass/theme/_child_theme_variables.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/style.css",
+		"/E/Websites/npm-law/app/public/wp-content/themes/wp-understrap/sass/theme/_child_theme.scss",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/.git/config",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/functions/widgets.php",
+		"/E/Websites/npm-law/app/public/wp-content/themes/wp-understrap/functions.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/functions.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/functions/menus.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/laterals.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/staff.php",
+		"/E/Websites/_lisi/sheeley/app/public/wp-content/themes/sheeley/templates/associates.php",
+		"/C/Users/Mike/Desktop/sitemap.txt",
+		"/E/Websites/sheeley/app/public/wp-content/themes/sheeley/gulpconfig.json",
+		"/E/Websites/_psc-starter/app/public/wp-content/themes/psc-starter/js/google-maps.js",
+		"/E/Websites/sheeley/app/public/wp-content/themes/sheeley/style.css",
+		"/E/Websites/_psc-starter/app/public/wp-content/themes/psc-starter/js/skip-link-focus-fix.js",
+		"/E/Websites/minleon/app/public/wp-content/themes/psc-starter/js/imageMapResizer.min.js",
+		"/E/Websites/_psc-starter/app/public/wp-content/themes/psc-starter/sass/child-theme.scss",
+		"/E/Websites/sheeley/app/public/wp-content/themes/sheeley/sass/theme/child-theme.scss",
+		"/E/Websites/sheeley/app/public/wp-content/themes/sheeley/sass/theme/_child_theme.scss",
+		"/E/Websites/sheeley/app/public/wp-content/themes/psc-starter/js/psc.js",
+		"/E/Websites/sheeley/app/public/wp-content/themes/psc-starter/js/ajax.js",
+		"/E/Websites/sheeley/app/public/wp-content/themes/sheeley/js/scripts.js",
+		"/E/Websites/sheeley/app/public/wp-content/themes/sheeley/css/child-theme.css.map",
+		"/E/Websites/sheeley/app/public/wp-content/themes/psc-starter/gulpconfig.json",
+		"/E/Websites/sheeley/app/public/wp-content/themes/psc-starter/package.json",
+		"/E/Websites/sheeley/app/public/wp-content/themes/psc-starter/package-lock.json",
+		"/E/Websites/sheeley/app/public/wp-content/themes/psc-starter/style.css",
+		"/E/Websites/minleon/app/public/wp-content/themes/psc-starter/js/child-theme.min.js",
+		"/E/Websites/minleon/app/public/wp-content/themes/psc-starter/js/child-theme.js",
+		"/E/Websites/minleon/app/public/wp-content/themes/psc-starter/css/child-theme.css",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/mu-plugins/lw_disable_nags.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/css/style.css",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/functions/admin_mods.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/inc/contact-form.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/functions/custom_functions.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-content/themes/ElliottGreenleaf/template-news.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/single-car.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/sass/theme/_child_theme.scss",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/templates/auction.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/snippets/car.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/footer.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/functions.php",
+		"/E/Websites/parks-superior-sales/app/public/wp-content/themes/cardealer-child/single-car.php",
+		"/E/Websites/parks-superior-sales/app/public/wp-content/themes/cardealer-child/template-car-listing.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/templates/all-models.php",
+		"/E/Websites/pss-rebuild/app/public/wp-content/themes/understrap-child/templates/shipping-and-warranty.php",
+		"/E/Websites/elliott-greenleaf/app/public/wp-config.php"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"E:\\Websites\\_lisi\\sheeley\\app\\public\\wp-content\\themes\\sheeley",
+			"E:\\Websites\\cix-health\\app\\public\\wp-content\\themes\\wp-understrap",
+			"E:\\Websites\\herbal-wonders\\app\\public\\wp-content\\themes\\psc-starter"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mainContent",
+			"cursor: pointer",
+			"#nextSlide",
+			"nextSlide",
+			".heading-wrapper",
+			"practiceAreasHe",
+			"mixer",
+			".dropdown-menu",
+			"general_bio",
+			"#hero",
+			"practiceAreas",
+			"padding-top",
+			"column",
+			"single",
+			";\n",
+			"nextS",
+			"single",
+			"show-",
+			"show-on",
+			"sublist",
+			"button",
+			"<?php get_template_part( 'snippets/navigation-arrow'); ?>",
+			"\"arrow\"",
+			"singleAttorney",
+			"svg",
+			"locationSlug",
+			"cursor:",
+			"cursor: pointer",
+			"attorney-con",
+			"clickable",
+			"<a",
+			"button",
+			"images-wrapper",
+			"profile-",
+			"single",
+			"sidebar",
+			"single",
+			"praticeAreasHeader",
+			"top: 20",
+			":after",
+			"top: ",
+			"@include media-breakpoint-down(sm)",
+			"sublist-trigger",
+			"right: 0",
+			"left: 0",
+			"single",
+			"datebox",
+			"jobSlider",
+			"width: 75%",
+			"h1 {",
+			".8",
+			"practiceAreasLIst",
+			"lulo-clean",
+			"sublist",
+			"general",
+			"overflow",
+			"practiceAreasL",
+			"single",
+			"images-wr",
+			"wysiwy",
+			"practiceAreaSi",
+			"wysiw",
+			"data-aos",
+			"sidebar",
+			"sideb",
+			"data-aos",
+			" mixitup",
+			"back",
+			"cli",
+			"practiceAreas",
+			"image",
+			"aboutSi",
+			".sidebar",
+			"fastF",
+			"button-group",
+			";\n",
+			"nth-",
+			"left: 50%",
+			".content-",
+			"togg",
+			"attorney",
+			"overflow",
+			"trigger",
+			"sublist",
+			"data-filter",
+			"disable",
+			"sort",
+			"mixit",
+			"sort",
+			"active",
+			"border-right: solid 1px red;",
+			"ourteam",
+			"initially-hidden",
+			"hover",
+			"postcount",
+			"$theid",
+			"* {",
+			"*",
+			"#news",
+			"newsandevents",
+			":before",
+			":after",
+			"newsouterwrapper",
+			"alert",
+			"#practiceAreasList",
+			"overflo",
+			"sidebar",
+			"communityeve",
+			"sidebar",
+			"practiceAreas",
+			"blue-gray",
+			"(); ",
+			"background",
+			"wysiwy",
+			"heroContent",
+			"width",
+			".left",
+			"light-blue",
+			"5rem",
+			"my_query",
+			"}\n",
+			".page-wrapper",
+			"acf",
+			"$dark-blue",
+			"overline mb-2",
+			"border-top:",
+			"background:",
+			"trigger"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"show-on-hover",
+			"locations",
+			"$blue",
+			"overline",
+			"<div class = \"mb-3\"><span class = \"font-italic\"><?php the_sub_field('title'); ?></span></div>",
+			"gold d-flex",
+			"mechanical",
+			"parks.d4tw.dev",
+			"https://parks.d4tw.dev",
+			"-thumb.webp",
+			"h4",
+			"xl",
+			"lg",
+			"mr-2",
+			"md-4",
+			"",
+			"retailerAccordian",
+			"consumerAccordian",
+			"¼",
+			"½",
+			"¾",
+			"⅔",
+			"½",
+			"⅓",
+			"½",
+			"⅓",
+			"¼",
+			"½",
+			"⅔",
+			"",
+			"¼",
+			"¾",
+			"½",
+			"",
+			"½",
+			"⅔",
+			"⅓",
+			"¾",
+			"½",
+			"¼",
+			"¾",
+			"⅔",
+			"⅓",
+			"½",
+			"¼",
+			"",
+			"psc.captchaintherye.com",
+			"http://psc.captchaintherye.com",
+			"pixelstrikecreative.com",
+			"https://pixelstrikecreative.com",
+			"psc",
+			"stpioofpietrelcinaeh.com",
+			"https://dev.designs4theweb.com/abc",
+			"homereproject.com",
+			"http://burnt-offerings-art.d4tw/",
+			"#0047AB",
+			"d4af37",
+			"Home ReProject",
+			"",
+			"psc",
+			"https://stpioofpietrelcinaeh.com",
+			"stpioofpietrelcinaeh.com",
+			"http://stpioofpietrelcinaeh.com",
+			"h6",
+			"Try it today!",
+			"$",
+			"",
+			"jQuery",
+			"sectionFive",
+			"sectionFour",
+			"sectionThree",
+			"$car_pending",
+			"ourWork",
+			"services",
+			".esgsignals",
+			"https://npmlaw.com/",
+			"blue",
+			"montserrat",
+			"$blue",
+			"'",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 62.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 168.0
+	},
+	"pinned_build_system": "",
+	"project": "acbc.sublime-project",
+	"replace":
+	{
+		"height": 84.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Mike\\Desktop\\sheeley.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 251.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

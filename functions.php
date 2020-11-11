@@ -41,7 +41,7 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 // ADDITIONAL THEME FILES
 function d4tw_enqueue_files () {
     wp_enqueue_script( 'Theme Scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
-    //wp_enqueue_style( 'Google Fonts', 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400,600&display=swap' );
+    wp_enqueue_style( 'Google Fonts', 'https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap' );
 }
 
 add_action('wp_enqueue_scripts', 'd4tw_enqueue_files');
@@ -149,30 +149,30 @@ function custom_excerpt_length( $length ) {
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 //Attorney CPT
-//add_action( 'init', 'attorney_post_type', 0 );
+add_action( 'init', 'video_post_type', 0 );
 
-function attorney_post_type() {
+function video_post_type() {
 // Set UI labels
   $labels = array(
-    'name'                => 'Attorneys',
-    'singular_name'       => 'Attorney',
-    'menu_name'           => 'Attorneys',
-    'parent_item_colon'   => 'Parent Attorneys',
-    'all_items'           => 'All Attorneys',
-    'view_item'           => 'View Attorney',
-    'add_new_item'        => 'Add New Attorney',
-    'add_new'             => 'Add Attorney',
-    'edit_item'           => 'Edit Attorney',
-    'update_item'         => 'Update Attorney',
-    'search_items'        => 'Search Attorneys',
-    'not_found'           => 'No Attorneys Found',
-    'not_found_in_trash'  => 'No Attorneys Found in Trash',
+    'name'                => 'Videos',
+    'singular_name'       => 'Video',
+    'menu_name'           => 'Videos',
+    'parent_item_colon'   => 'Parent Videos',
+    'all_items'           => 'All Videos',
+    'view_item'           => 'View Video',
+    'add_new_item'        => 'Add New Video',
+    'add_new'             => 'Add Video',
+    'edit_item'           => 'Edit Video',
+    'update_item'         => 'Update Video',
+    'search_items'        => 'Search Videos',
+    'not_found'           => 'No Videos Found',
+    'not_found_in_trash'  => 'No Videos Found in Trash',
   );
   
 // Set other options
   $args = array(
-    'label'               => 'Attorneys',
-    'description'         => 'A listing of the attorneys at the firm.',
+    'label'               => 'Videos',
+    'description'         => 'Site videos.',
     'labels'              => $labels,
     'supports'            => array( 'title', 'editor', 'author' ),
     'hierarchical'        => false,
@@ -187,15 +187,15 @@ function attorney_post_type() {
     'exclude_from_search' => false,
     'publicly_queryable'  => true,
     'capability_type'     => 'page',
-    'menu_icon'           => 'dashicons-groups'
+    'menu_icon'           => 'dashicons-video-alt3'
   );
   
 //Register the CPT
-  //register_post_type( 'attorney', $args );
+  register_post_type( 'video', $args );
 }
 
 // CUSTOM IMAGE SIZES
-set_post_thumbnail_size( 300, 9999 ); // Normal post thumbnails
-//add_image_size( 'bio-thumb', 80, 114, true ); // Cropped to exact size
+update_option( 'thumbnail_size_w', 320 );
+update_option( 'thumbnail_size_h', 180 );
 
 ?>
