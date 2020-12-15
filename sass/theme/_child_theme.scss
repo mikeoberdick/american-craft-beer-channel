@@ -39,7 +39,9 @@ body {
 /*------------------------------------------------*/
 
 #wrapper-navbar {
-  background-color: $dark-brown;
+  background-image: url('/wp-content/themes/ACBC/img/vertical_sheet_metal.png');
+  background-size: cover !important;
+    background-position: center center !important;
   #logoLink {
     img {
       width: 50%;
@@ -47,6 +49,13 @@ body {
   }
   #main-menu {
     li {
+      border-bottom: solid 2px transparent;
+      &:hover {
+        border-color: $purple;
+      }
+      &.active {
+        border-color: $purple;
+      }
       @include media-breakpoint-up(lg) {
           margin-right: 3rem;    
       } 
@@ -54,7 +63,7 @@ body {
         margin-right: 0;
       }
       a {
-        color: #fff;
+        color: $purple;
       }  
     }
   }
@@ -93,26 +102,83 @@ a {
 
 .btn {
   font-family: $roboto-slab;
-  text-transform: uppercase;
-  border-radius: 0;
   padding: .5rem 3rem;
   white-space: normal;
+  transition: all .5s;
+}
+
+.outline-button {
+  text-transform: uppercase;
+  border-radius: 0;
   background: $dark-brown;
   color: $light-brown;
   border: 5px solid $light-brown;
   outline: 5px solid $dark-brown;
-  transition: all .5s;
   &:hover {
     background-color: $light-brown !important;
     color: $dark-brown;
-    }
+  }
+}
+
+.purple-button {
+  border-radius: 5;
+  background: $purple;
+  color: #fff;
+  border: 0;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.red-button {
+  border-radius: 5;
+  background: #DB0000;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+  border: 0;
 }
 
 //HOMEPAGE
 
 #homepage {
   #hero {
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover !important;
+    background-position: center center !important;
+    @include media-breakpoint-up(md) {
+      min-height: 750px;  
+    }
+    #contentContainer {
+      background: rgba(16,9,1,.75);
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+      color: #fff;
+      h1 {
+        color: #fff;
+      }
+      .subheader {
+        @include media-breakpoint-up(md) {
+          width: 75%;
+          margin: 0 auto;
+        }
+      }
+      #buttons {
+        text-align: center;
+        .btn {
+          &:first-of-type {
+            margin-right: 1rem;
+          }
+          img {
+            margin-left: .5rem;
+            max-height: 40px;
+          }
+        }
+      }
+    }
   }
   .left, .right {
     position: relative;
@@ -160,6 +226,12 @@ a {
     @include media-breakpoint-up(lg) {
       max-width: 50%;
       text-align: center;  
+    }
+  }
+  #featuredVideos {
+    background: url('/wp-content/themes/ACBC/img/page_bg.png');
+    .video-content-wrapper {
+      background: #F5EEE1;
     }
   }
 }

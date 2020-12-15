@@ -11637,10 +11637,10 @@ h1 {
     font-size: 24.192px; }
     @media screen and (min-width: 320px) {
       h1 {
-        font-size: calc(24.192px + 87.808 * ((100vw - 320px) / 880)); } }
+        font-size: calc(24.192px + 50.83925 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       h1 {
-        font-size: 112px; } }
+        font-size: 75.03125px; } }
 
 h2 {
   font-size: 1.728rem; }
@@ -11648,10 +11648,10 @@ h2 {
     font-size: 24.192px; }
     @media screen and (min-width: 320px) {
       h2 {
-        font-size: calc(24.192px + 87.808 * ((100vw - 320px) / 880)); } }
+        font-size: calc(24.192px + 50.83925 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       h2 {
-        font-size: 112px; } }
+        font-size: 75.03125px; } }
 
 h3 {
   font-size: 1.44rem; }
@@ -11659,10 +11659,10 @@ h3 {
     font-size: 20.16px; }
     @media screen and (min-width: 320px) {
       h3 {
-        font-size: calc(20.16px + 35.84 * ((100vw - 320px) / 880)); } }
+        font-size: calc(20.16px + 22.715 * ((100vw - 320px) / 880)); } }
     @media screen and (min-width: 1200px) {
       h3 {
-        font-size: 56px; } }
+        font-size: 42.875px; } }
 
 body {
   color: #000;
@@ -11675,16 +11675,24 @@ body {
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
 #wrapper-navbar {
-  background-color: #2F2403; }
+  background-image: url("/wp-content/themes/ACBC/img/vertical_sheet_metal.png");
+  background-size: cover !important;
+  background-position: center center !important; }
   #wrapper-navbar #logoLink img {
     width: 50%; }
-  @media (min-width: 992px) {
-    #wrapper-navbar #main-menu li {
-      margin-right: 3rem; } }
-  #wrapper-navbar #main-menu li:last-of-type {
-    margin-right: 0; }
-  #wrapper-navbar #main-menu li a {
-    color: #fff; }
+  #wrapper-navbar #main-menu li {
+    border-bottom: solid 2px transparent; }
+    #wrapper-navbar #main-menu li:hover {
+      border-color: #6f42c1; }
+    #wrapper-navbar #main-menu li.active {
+      border-color: #6f42c1; }
+    @media (min-width: 992px) {
+      #wrapper-navbar #main-menu li {
+        margin-right: 3rem; } }
+    #wrapper-navbar #main-menu li:last-of-type {
+      margin-right: 0; }
+    #wrapper-navbar #main-menu li a {
+      color: #6f42c1; }
 
 /*------------------------------------------------*/
 /*--------------------[LINKS]---------------------*/
@@ -11711,19 +11719,72 @@ a {
 .btn,
 .wpcf7 input[type=submit] {
   font-family: "Roboto Slab", serif;
-  text-transform: uppercase;
-  border-radius: 0;
   padding: .5rem 3rem;
   white-space: normal;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.outline-button {
+  text-transform: uppercase;
+  border-radius: 0;
   background: #2F2403;
   color: #F5EEE1;
   border: 5px solid #F5EEE1;
-  outline: 5px solid #2F2403;
-  -webkit-transition: all .5s;
-  transition: all .5s; }
-  .btn:hover, .wpcf7 input:hover[type=submit] {
+  outline: 5px solid #2F2403; }
+  .outline-button:hover {
     background-color: #F5EEE1 !important;
     color: #2F2403; }
+
+.purple-button {
+  border-radius: 5;
+  background: #6f42c1;
+  color: #fff;
+  border: 0; }
+  .purple-button:hover {
+    color: #fff; }
+
+.red-button {
+  border-radius: 5;
+  background: #DB0000;
+  color: #fff;
+  border: 0; }
+  .red-button:hover {
+    color: #fff; }
+
+#homepage #hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-size: cover !important;
+  background-position: center center !important; }
+  @media (min-width: 768px) {
+    #homepage #hero {
+      min-height: 750px; } }
+  #homepage #hero #contentContainer {
+    background: rgba(16, 9, 1, 0.75);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    color: #fff; }
+    #homepage #hero #contentContainer h1 {
+      color: #fff; }
+    @media (min-width: 768px) {
+      #homepage #hero #contentContainer .subheader {
+        width: 75%;
+        margin: 0 auto; } }
+    #homepage #hero #contentContainer #buttons {
+      text-align: center; }
+      #homepage #hero #contentContainer #buttons .btn:first-of-type, #homepage #hero #contentContainer #buttons .wpcf7 input:first-of-type[type=submit], .wpcf7 #homepage #hero #contentContainer #buttons input:first-of-type[type=submit] {
+        margin-right: 1rem; }
+      #homepage #hero #contentContainer #buttons .btn img, #homepage #hero #contentContainer #buttons .wpcf7 input[type=submit] img, .wpcf7 #homepage #hero #contentContainer #buttons input[type=submit] img {
+        margin-left: .5rem;
+        max-height: 40px; }
 
 #homepage .left, #homepage .right {
   position: relative;
@@ -11788,6 +11849,11 @@ a {
   #homepage .content-wrapper {
     max-width: 50%;
     text-align: center; } }
+
+#homepage #featuredVideos {
+  background: url("/wp-content/themes/ACBC/img/page_bg.png"); }
+  #homepage #featuredVideos .video-content-wrapper {
+    background: #F5EEE1; }
 
 /*------------------------------------------------*/
 /*------------------[NINJA FORMS]-----------------*/

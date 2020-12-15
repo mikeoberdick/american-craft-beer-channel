@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 				<img class = "mr-3" src="<?php echo $logo['url']; ?>" alt="<?php echo get_bloginfo( 'name'); ?>">
 				<div class = "text-left">
 					<h6 class = "roboto watch-now">Watch Now on</h6>
-					<img src="<?php echo get_stylesheet_directory_uri() . '/img/roku.png'; ?>" alt="Roku">
+					<a target = "_blank" href = "<?php the_field('roku_url', 'option'); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/img/roku.png'; ?>" alt="Roku"></a>
 				<p class = "mb-0 small mt-3">&copy <?php echo date('Y'). ' ' . get_bloginfo('name') . '. ' . 'All rights reserved.'; ?></p>
 				<p class = "mb-0 small">Website designed and developed by <a rel="noreferrer" target = "_blank" href = "https://designs4theweb.com" alt = "Designs 4 The Web WordPress Website Builders">Designs 4 The Web</a></p>
 				</div>

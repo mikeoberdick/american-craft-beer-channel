@@ -19,5 +19,14 @@ $(document).ready(function() {
 	$('#js-heightControl').css('height', $(window).height() - $('html').height() +'px');
 });
 
+//Force homepage hero buttons to be the same width
+var width = Math.max.apply( null, $('#homepage #buttons button').map( function () {
+    return $( this ).outerWidth( true );
+}).get() );
+
+$('#homepage #buttons button').each(function() {
+    $(this).css('width', width + 'px');
+});
+
 //end of file
 });
