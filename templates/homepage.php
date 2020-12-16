@@ -103,8 +103,6 @@ defined( 'ABSPATH' ) || exit;
 						<?php endwhile; ?>
 					</div><!-- .row -->
 				</div><!-- .container -->
-				<?php //get the most recent four videos ?>
-
 			</div><!-- #featuredVideos -->
 		</div><!-- #homepage -->
 	</main><!-- #main -->
