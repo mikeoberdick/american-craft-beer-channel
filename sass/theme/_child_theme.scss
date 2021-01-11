@@ -37,11 +37,22 @@ body {
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
-
 #wrapper-navbar {
-  background-image: url('/wp-content/themes/ACBC/img/vertical_sheet_metal.png');
+  //box-shadow: rgb(35 33 31 / 75%) 0 0 0 500px inset;
+}
+.navbar {
+  background-image: url('/wp-content/themes/ACBC/img/header_footer_bg.png');
   background-size: cover !important;
-    background-position: center center !important;
+  background-position: center center !important;
+  
+  @include media-breakpoint-up(md) {
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,.60%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
   #logoLink {
     img {
       width: 50%;
@@ -49,7 +60,7 @@ body {
   }
   #main-menu {
     li {
-      border-bottom: solid 2px transparent;
+      border-bottom: solid 5px transparent;
       &:hover {
         border-color: $purple;
       }
@@ -63,7 +74,8 @@ body {
         margin-right: 0;
       }
       a {
-        color: $purple;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
       }  
     }
   }
@@ -102,7 +114,7 @@ a {
 
 .btn {
   font-family: $roboto-slab;
-  padding: .5rem 3rem;
+  padding: 1rem 3rem;
   white-space: normal;
   transition: all .5s;
 }
@@ -144,6 +156,12 @@ a {
   background: rgba(16,9,1,.60);
 }
 
+.page-wrapper {
+  @include media-breakpoint-up(md) {
+    padding-top: 125px;  
+  }
+}
+
 #hero {
   display: flex;
   justify-content: center;
@@ -170,13 +188,18 @@ a {
   }
   #buttons {
     text-align: center;
-    .btn {
-      &:first-of-type {
-        margin-right: 1rem;
+    a:first-of-type {
+      .btn {
+        @include media-breakpoint-up(md) {
+          margin-right: 1%;  
+        }  
       }
+    }
+    .btn {
       img {
         margin-left: .5rem;
         max-height: 40px;
+        max-width: 100px;
       }
     }
   }
@@ -201,6 +224,14 @@ a {
 
 //HOMEPAGE
 #homepage {
+  #hero #buttons {
+    .btn {
+      width: 100%;
+      @include media-breakpoint-up(md) {
+        width: 48%;  
+      }
+    }
+  }
   .left, .right {
     position: relative;
     flex: 0 0 100%;
@@ -279,7 +310,27 @@ a {
 
 #advertise {
   .form-wrapper {
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-only(md) {
+      nf-field:nth-of-type(4) {
+        width: 48.717948717948715%;
+        float: left;
+      }
+      nf-field:nth-of-type(5) {
+        width: 48.717948717948715%;
+        float: left;
+        margin-left: 2.564102564102564%;
+      }
+      nf-field:nth-of-type(6) {
+        width: 48.717948717948715%;
+        float: left;
+      } 
+      nf-field:nth-of-type(7) {
+        width: 48.717948717948715%;
+        float: left;
+        margin-left: 2.564102564102564%;
+      }  
+    }
+    @include media-breakpoint-up(lg) {
       nf-field:nth-of-type(4) {
         width: 23.5%;
         float: left;
@@ -323,6 +374,15 @@ a {
 
 #submit {
   #formWrapperOne {
+    @include media-breakpoint-only(md) {
+      nf-field:nth-of-type(12) {
+        clear: both;
+        margin-left: 0 !important;
+        .nf-field-element ul li:nth-of-type(2):before {
+          right: -75px !important;
+        }
+      }
+    }
     @include media-breakpoint-up(md) {
       nf-field:nth-of-type(5) {
         width: 23.5%;
@@ -370,6 +430,9 @@ a {
         .nf-field-element {
           width: 55%;
           ul {
+            li {
+              position: relative;
+            }
             li:first-of-type {
               label {
                 color: transparent !important;
@@ -397,7 +460,7 @@ a {
                 width: 54px;
                 position: absolute;
                 top: 0;
-                right: -50px;
+                left: 28px;
                 background-size: contain !important;
                 background-repeat: no-repeat !important;
               }
@@ -408,11 +471,27 @@ a {
     }
   }
   #formWrapperTwo {
-    ul {
-      justify-content: space-around;
+    nf-field:nth-of-type(1) {
+    margin-bottom: 25px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+      }
     }
-    @include media-breakpoint-up(md) {
-      nf-field:nth-of-type(3) {
+    nf-field:nth-of-type(2) {
+      ul {
+        @include media-breakpoint-up(lg) {
+          justify-content: space-around; 
+          li {
+            margin-top: 25px !important;
+          }
+        }
+        li {
+          margin-right: 1rem !important;
+        }
+      }
+    }
+    nf-field:nth-of-type(3) {
+      @include media-breakpoint-up(md) {
         clear: left;
         float: left;
         width: 50%;
@@ -424,11 +503,18 @@ a {
           width: 55% !important;
         }
       }
-      nf-field:nth-of-type(4) {
+    }
+    nf-field:nth-of-type(4) {
+      @include media-breakpoint-up(md) {
         float: left;
         width: 15%;
       }
-      nf-field:nth-of-type(5) {
+    }
+    nf-field:nth-of-type(5) {
+      @include media-breakpoint-only(md) {
+        width: 33% !important;
+      }
+      @include media-breakpoint-up(md) {
         float: left;
         margin-left: 1.5%;
       }
@@ -502,6 +588,16 @@ a {
       padding: .5rem 3rem;
       text-transform: capitalize;
     }
+    .nf-field-label {
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0 !important;  
+      }
+    }
+    .nf-field-container {
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 25px;
+      }
+    }
     }
   }
 }
@@ -515,8 +611,26 @@ a {
 ::placeholder {
   color: $dark-brown;
 }
+
+.nf-response-msg {
+  display: block;
+    border: solid;
+    border-color: #6f42c1;
+    margin-bottom: 1rem;
+    padding: 15px;
+    p {
+      margin-bottom: 0;
+    }
+}
+
 .nf-form-fields-required, .ninja-forms-req-symbol {
   display: none;
+}
+
+.nf-error.field-wrap {
+  .nf-field-element:after {
+    display: none;
+  }
 }
 
 
@@ -527,6 +641,18 @@ a {
 footer {
   background-color: $dark-brown;
   color: #fff;
+  #footerTop {
+    box-shadow: rgba(0,0,0,.5) 0 0 0 150px inset;
+    background-image: url('/wp-content/themes/ACBC/img/header_footer_bg.png');
+    background-size: cover !important;
+    background-position: center center !important;
+    height: 150px;
+  }
+  img {
+    @include media-breakpoint-down(sm) {
+      width: 35%;
+    }
+  }
   a {
     color: #fff;
   }

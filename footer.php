@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 <div id="js-heightControl" style="height: 0;">&nbsp;</div>
 
 <footer>
-	<img src="<?php echo get_stylesheet_directory_uri() . '/img/footer_top.png'; ?>">
+	<div id ="footerTop"></div><!-- .footer-top -->
 	<div class="container py-3">
 		<div class="row">
 			<div class="col-sm-12 d-flex justify-content-center align-items-center">

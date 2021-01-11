@@ -14,14 +14,14 @@ defined( 'ABSPATH' ) || exit;
 				<div id="contentContainer">
 					<div class="container">
 						<div class="row mb-3">
-							<div id = "logo" class="col-md-3 offset-md-3">
+							<div id = "logo" class="col-lg-4 offset-lg-1 col-xl-3 offset-xl-3">
 								<?php $logo = get_field('logo', 'option'); ?>
-								<img src="<?php echo $logo['url'];; ?>" alt="<?php echo $logo['alt']; ?>">
-							</div><!-- .col-md-3 -->
-							<div id = "buttons" class="col-md-3">
+								<img class = "mb-3 mb-lg-0" src="<?php echo $logo['url'];; ?>" alt="<?php echo $logo['alt']; ?>">
+							</div><!-- .col-xl-3 -->
+							<div id = "buttons" class="col-lg-6 col-xl-3">
 								<a target = "_blank" href = "<?php echo the_field('roku_url', 'option'); ?>"><button role = "button" class = "w-100 roboto btn purple-button">Watch Now on <img src="<?php echo get_stylesheet_directory_uri() . '/img/roku.png'; ?>" alt="Roku"></button></a>
-								<a target = "_blank" href = "<?php echo the_field('youtube_url', 'option'); ?>"><button role = "button" class = "w-100 roboto btn red-button">Watch Now on <img src="<?php echo get_stylesheet_directory_uri() . '/img/youtube.png'; ?>" alt="YouTube"></button></a>
-							</div><!-- .col-md-3 -->
+								<a target = "_blank" href = "<?php echo the_field('youtube_url', 'option'); ?>"><button role = "button" class = "w-100 roboto btn red-button">Watch Now on <img src="<?php echo get_stylesheet_directory_uri() . '/img/youtube_small.png'; ?>" alt="YouTube"></button></a>
+							</div><!-- .col-xl-3 -->
 						</div><!-- .row -->
 					</div><!-- .container -->
 				</div><!-- #contentContainer -->

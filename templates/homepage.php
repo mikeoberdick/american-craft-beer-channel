@@ -14,12 +14,12 @@ defined( 'ABSPATH' ) || exit;
 				<div id="contentContainer">
 					<div class="container">
 						<div class="row mb-3">
-							<div class="col-sm-4 text-md-right">
-								<img src="<?php echo $hero['logo']['url']; ?>" alt="<?php echo $logo['alt']; ?>">
-							</div><!-- .col-sm-4 -->
-							<div class="col-sm-8">
+							<div class="col-md-4 text-center text-md-right">
+								<img class = "mb-3 mb-md-0" src="<?php echo $hero['logo']['url']; ?>" alt="<?php echo $logo['alt']; ?>">
+							</div><!-- .col-md-4 -->
+							<div class="col-md-8 text-center text-md-left">
 								<h1><?php echo $hero['header']; ?></h1>
-							</div><!-- .col-sm-8 -->
+							</div><!-- .col-md-8 -->
 						</div><!-- .row -->
 						<div class="row mb-3">
 							<div class="col-sm-12">
@@ -28,8 +28,8 @@ defined( 'ABSPATH' ) || exit;
 						</div><!-- .row -->
 						<div id = "buttons" class="row">
 							<div class="col-sm-12">
-								<a target = "_blank" href = "<?php echo the_field('roku_url', 'option'); ?>"><button role = "button" class = "roboto btn purple-button">Watch Now on <img src="<?php echo get_stylesheet_directory_uri() . '/img/roku.png'; ?>" alt="Roku"></button></a>
-								<a target = "_blank" href = "<?php echo the_field('youtube_url', 'option'); ?>"><button role = "button" class = "roboto btn red-button">Watch Now on <img src="<?php echo get_stylesheet_directory_uri() . '/img/youtube.png'; ?>" alt="YouTube"></button></a>
+								<a target = "_blank" href = "<?php echo the_field('roku_url', 'option'); ?>"><button role = "button" class = "roboto btn purple-button mb-3 mb-md-0">Watch Now on <img src="<?php echo get_stylesheet_directory_uri() . '/img/roku.png'; ?>" alt="Roku"></button></a>
+								<a target = "_blank" href = "<?php echo the_field('youtube_url', 'option'); ?>"><button role = "button" class = "roboto btn red-button">Watch Now on <img src="<?php echo get_stylesheet_directory_uri() . '/img/youtube_small.png'; ?>" alt="YouTube"></button></a>
 							</div><!-- .col-sm-12 -->	
 						</div><!-- .row -->
 					</div><!-- .container -->

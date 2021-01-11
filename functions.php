@@ -41,6 +41,7 @@ add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 // ADDITIONAL THEME FILES
 function d4tw_enqueue_files () {
     wp_enqueue_script( 'Theme Scripts', get_stylesheet_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'Match Heights JS', get_stylesheet_directory_uri() . '/js/jquery.matchHeight-min.js', array('jquery'), '1.0.0', true );
     wp_enqueue_style( 'Google Fonts', 'https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@500&display=swap' );
 }
 

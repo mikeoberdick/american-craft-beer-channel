@@ -11674,25 +11674,35 @@ body {
 /*------------------------------------------------*/
 /*--------------------[HEADER]--------------------*/
 /*------------------------------------------------*/
-#wrapper-navbar {
-  background-image: url("/wp-content/themes/ACBC/img/vertical_sheet_metal.png");
+.navbar {
+  background-image: url("/wp-content/themes/ACBC/img/header_footer_bg.png");
   background-size: cover !important;
   background-position: center center !important; }
-  #wrapper-navbar #logoLink img {
+  @media (min-width: 768px) {
+    .navbar {
+      -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.6);
+              box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030; } }
+  .navbar #logoLink img {
     width: 50%; }
-  #wrapper-navbar #main-menu li {
-    border-bottom: solid 2px transparent; }
-    #wrapper-navbar #main-menu li:hover {
+  .navbar #main-menu li {
+    border-bottom: solid 5px transparent; }
+    .navbar #main-menu li:hover {
       border-color: #6f42c1; }
-    #wrapper-navbar #main-menu li.active {
+    .navbar #main-menu li.active {
       border-color: #6f42c1; }
     @media (min-width: 992px) {
-      #wrapper-navbar #main-menu li {
+      .navbar #main-menu li {
         margin-right: 3rem; } }
-    #wrapper-navbar #main-menu li:last-of-type {
+    .navbar #main-menu li:last-of-type {
       margin-right: 0; }
-    #wrapper-navbar #main-menu li a {
-      color: #6f42c1; }
+    .navbar #main-menu li a {
+      color: #fff;
+      text-shadow: 0 0 5px #000; }
 
 /*------------------------------------------------*/
 /*--------------------[LINKS]---------------------*/
@@ -11719,7 +11729,7 @@ a {
 .btn,
 .wpcf7 input[type=submit] {
   font-family: "Roboto Slab", serif;
-  padding: .5rem 3rem;
+  padding: 1rem 3rem;
   white-space: normal;
   -webkit-transition: all .5s;
   transition: all .5s; }
@@ -11754,6 +11764,10 @@ a {
 .opacity-bg {
   background: rgba(16, 9, 1, 0.6); }
 
+@media (min-width: 768px) {
+  .page-wrapper {
+    padding-top: 125px; } }
+
 #hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11783,11 +11797,14 @@ a {
         margin: 0 auto; } }
   #hero #buttons {
     text-align: center; }
-    #hero #buttons .btn:first-of-type, #hero #buttons .wpcf7 input:first-of-type[type=submit], .wpcf7 #hero #buttons input:first-of-type[type=submit] {
-      margin-right: 1rem; }
+    @media (min-width: 768px) {
+      #hero #buttons a:first-of-type .btn,
+      #hero #buttons a:first-of-type .wpcf7 input[type=submit], .wpcf7 #hero #buttons a:first-of-type input[type=submit] {
+        margin-right: 1%; } }
     #hero #buttons .btn img, #hero #buttons .wpcf7 input[type=submit] img, .wpcf7 #hero #buttons input[type=submit] img {
       margin-left: .5rem;
-      max-height: 40px; }
+      max-height: 40px;
+      max-width: 100px; }
 
 #advertise, #submit {
   background: url("/wp-content/themes/ACBC/img/page_bg.png");
@@ -11804,6 +11821,14 @@ a {
   background-size: cover !important; }
   #featuredVideos .video-content-wrapper {
     background: #F5EEE1; }
+
+#homepage #hero #buttons .btn,
+#homepage #hero #buttons .wpcf7 input[type=submit], .wpcf7 #homepage #hero #buttons input[type=submit] {
+  width: 100%; }
+  @media (min-width: 768px) {
+    #homepage #hero #buttons .btn,
+    #homepage #hero #buttons .wpcf7 input[type=submit], .wpcf7 #homepage #hero #buttons input[type=submit] {
+      width: 48%; } }
 
 #homepage .left, #homepage .right {
   position: relative;
@@ -11900,7 +11925,23 @@ a {
     margin-top: .5rem;
     max-height: none !important; }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #advertise .form-wrapper nf-field:nth-of-type(4) {
+    width: 48.717948717948715%;
+    float: left; }
+  #advertise .form-wrapper nf-field:nth-of-type(5) {
+    width: 48.717948717948715%;
+    float: left;
+    margin-left: 2.564102564102564%; }
+  #advertise .form-wrapper nf-field:nth-of-type(6) {
+    width: 48.717948717948715%;
+    float: left; }
+  #advertise .form-wrapper nf-field:nth-of-type(7) {
+    width: 48.717948717948715%;
+    float: left;
+    margin-left: 2.564102564102564%; } }
+
+@media (min-width: 992px) {
   #advertise .form-wrapper nf-field:nth-of-type(4) {
     width: 23.5%;
     float: left; }
@@ -11933,6 +11974,13 @@ a {
   outline: none;
   padding: .5rem 3rem;
   text-transform: capitalize; }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #submit #formWrapperOne nf-field:nth-of-type(12) {
+    clear: both;
+    margin-left: 0 !important; }
+    #submit #formWrapperOne nf-field:nth-of-type(12) .nf-field-element ul li:nth-of-type(2):before {
+      right: -75px !important; } }
 
 @media (min-width: 768px) {
   #submit #formWrapperOne nf-field:nth-of-type(5) {
@@ -11971,6 +12019,8 @@ a {
       width: 45% !important; }
     #submit #formWrapperOne nf-field:nth-of-type(12) .nf-field-element {
       width: 55%; }
+      #submit #formWrapperOne nf-field:nth-of-type(12) .nf-field-element ul li {
+        position: relative; }
       #submit #formWrapperOne nf-field:nth-of-type(12) .nf-field-element ul li:first-of-type label {
         color: transparent !important; }
       #submit #formWrapperOne nf-field:nth-of-type(12) .nf-field-element ul li:first-of-type:after {
@@ -11992,13 +12042,25 @@ a {
         width: 54px;
         position: absolute;
         top: 0;
-        right: -50px;
+        left: 28px;
         background-size: contain !important;
         background-repeat: no-repeat !important; } }
 
-#submit #formWrapperTwo ul {
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+#submit #formWrapperTwo nf-field:nth-of-type(1) {
+  margin-bottom: 25px; }
+  @media (min-width: 992px) {
+    #submit #formWrapperTwo nf-field:nth-of-type(1) {
+      margin-bottom: 0; } }
+
+@media (min-width: 992px) {
+  #submit #formWrapperTwo nf-field:nth-of-type(2) ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    #submit #formWrapperTwo nf-field:nth-of-type(2) ul li {
+      margin-top: 25px !important; } }
+
+#submit #formWrapperTwo nf-field:nth-of-type(2) ul li {
+  margin-right: 1rem !important; }
 
 @media (min-width: 768px) {
   #submit #formWrapperTwo nf-field:nth-of-type(3) {
@@ -12009,10 +12071,18 @@ a {
       width: 42% !important;
       text-align: left !important; }
     #submit #formWrapperTwo nf-field:nth-of-type(3) .nf-field-element {
-      width: 55% !important; }
+      width: 55% !important; } }
+
+@media (min-width: 768px) {
   #submit #formWrapperTwo nf-field:nth-of-type(4) {
     float: left;
-    width: 15%; }
+    width: 15%; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #submit #formWrapperTwo nf-field:nth-of-type(5) {
+    width: 33% !important; } }
+
+@media (min-width: 768px) {
   #submit #formWrapperTwo nf-field:nth-of-type(5) {
     float: left;
     margin-left: 1.5%; } }
@@ -12070,6 +12140,12 @@ a {
       outline: none;
       padding: .5rem 3rem;
       text-transform: capitalize; }
+    @media (min-width: 768px) {
+      .form-wrapper .nf-form-cont .nf-form-content .nf-field-label {
+        margin-bottom: 0 !important; } }
+    @media (max-width: 767.98px) {
+      .form-wrapper .nf-form-cont .nf-form-content .nf-field-container {
+        margin-bottom: 25px; } }
 
 ::-webkit-input-placeholder {
   color: #2F2403; }
@@ -12086,7 +12162,19 @@ a {
 ::placeholder {
   color: #2F2403; }
 
+.nf-response-msg {
+  display: block;
+  border: solid;
+  border-color: #6f42c1;
+  margin-bottom: 1rem;
+  padding: 15px; }
+  .nf-response-msg p {
+    margin-bottom: 0; }
+
 .nf-form-fields-required, .ninja-forms-req-symbol {
+  display: none; }
+
+.nf-error.field-wrap .nf-field-element:after {
   display: none; }
 
 /*------------------------------------------------*/
@@ -12095,6 +12183,16 @@ a {
 footer {
   background-color: #2F2403;
   color: #fff; }
+  footer #footerTop {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 150px inset;
+            box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 150px inset;
+    background-image: url("/wp-content/themes/ACBC/img/header_footer_bg.png");
+    background-size: cover !important;
+    background-position: center center !important;
+    height: 150px; }
+  @media (max-width: 767.98px) {
+    footer img {
+      width: 35%; } }
   footer a {
     color: #fff; }
   footer .watch-now {
