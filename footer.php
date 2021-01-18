@@ -15,12 +15,9 @@ defined( 'ABSPATH' ) || exit;
 <div id="js-heightControl" style="height: 0;">&nbsp;</div>
 
 <footer>
-	<div id ="footerTop"></div><!-- .footer-top -->
 	<div class="container py-3">
 		<div class="row">
 			<div class="col-sm-12 d-flex justify-content-center align-items-center">
-				<?php $logo = get_field('logo', 'options'); ?>
-				<img class = "mr-3" src="<?php echo $logo['url']; ?>" alt="<?php echo get_bloginfo( 'name'); ?>">
 				<div class = "text-left">
 					<h6 class = "roboto watch-now">Watch Now on</h6>
 					<a target = "_blank" href = "<?php the_field('roku_url', 'option'); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/img/roku.png'; ?>" alt="Roku"></a>

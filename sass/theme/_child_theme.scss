@@ -217,8 +217,11 @@ a {
   box-shadow:  rgba(0,0,0, .5) 0 0 0 999px inset;
   background-position: center center !important;
   background-size: cover !important;
-  .video-content-wrapper {
+  .video-wrapper {
     background: #F5EEE1;
+    .video-content-wrapper {
+      background: #F5EEE1;
+    }
   }
 }
 
@@ -639,20 +642,10 @@ a {
 /*------------------------------------------------*/
 
 footer {
-  background-color: $dark-brown;
+  background-image: url('/wp-content/themes/ACBC/img/footer.png');
+  background-size: cover !important;
+  background-position: center center !important;
   color: #fff;
-  #footerTop {
-    box-shadow: rgba(0,0,0,.5) 0 0 0 150px inset;
-    background-image: url('/wp-content/themes/ACBC/img/header_footer_bg.png');
-    background-size: cover !important;
-    background-position: center center !important;
-    height: 150px;
-  }
-  img {
-    @include media-breakpoint-down(sm) {
-      width: 35%;
-    }
-  }
   a {
     color: #fff;
   }

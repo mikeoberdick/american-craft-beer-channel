@@ -11819,8 +11819,10 @@ a {
           box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 999px inset;
   background-position: center center !important;
   background-size: cover !important; }
-  #featuredVideos .video-content-wrapper {
+  #featuredVideos .video-wrapper {
     background: #F5EEE1; }
+    #featuredVideos .video-wrapper .video-content-wrapper {
+      background: #F5EEE1; }
 
 #homepage #hero #buttons .btn,
 #homepage #hero #buttons .wpcf7 input[type=submit], .wpcf7 #homepage #hero #buttons input[type=submit] {
@@ -12181,18 +12183,10 @@ a {
 /*--------------------[FOOTER]--------------------*/
 /*------------------------------------------------*/
 footer {
-  background-color: #2F2403;
+  background-image: url("/wp-content/themes/ACBC/img/footer.png");
+  background-size: cover !important;
+  background-position: center center !important;
   color: #fff; }
-  footer #footerTop {
-    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 150px inset;
-            box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 150px inset;
-    background-image: url("/wp-content/themes/ACBC/img/header_footer_bg.png");
-    background-size: cover !important;
-    background-position: center center !important;
-    height: 150px; }
-  @media (max-width: 767.98px) {
-    footer img {
-      width: 35%; } }
   footer a {
     color: #fff; }
   footer .watch-now {

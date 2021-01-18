@@ -37,14 +37,16 @@ defined( 'ABSPATH' ) || exit;
 					<div class="row">
 						<?php $videos = get_field('featured_videos'); ?>
 						<?php foreach( $videos as $post ) : setup_postdata($post); ?>
-							<div class="col-md-6">	
-								<div class="embed-responsive embed-responsive-16by9">
-									<?php the_field('video_link'); ?>
-								</div><!-- .embed-responsive -->
-								<div class="video-content-wrapper p-3">
-									<h5 class = "mb-3"><?php the_title(); ?></h5>
-									<p class = "small"><?php the_field('description'); ?></p>	
-								</div><!-- .video-content-wrapper -->
+							<div class="col-md-6">
+								<div class="video-wrapper h-100">
+									<div class="embed-responsive embed-responsive-16by9">
+										<?php the_field('video_link'); ?>
+									</div><!-- .embed-responsive -->
+									<div class="video-content-wrapper p-3">
+										<h5 class = "mb-3"><?php the_title(); ?></h5>
+										<p class = "small"><?php the_field('description'); ?></p>	
+									</div><!-- .video-content-wrapper -->
+								</div><!-- .video-wrapper -->
 							</div><!-- .col-md-6 -->
 						<?php endforeach; wp_reset_postdata(); ?>
 					</div><!-- .row -->
