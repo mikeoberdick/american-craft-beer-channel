@@ -645,13 +645,19 @@ footer {
   background-image: url('/wp-content/themes/ACBC/img/footer.png');
   background-size: cover !important;
   background-position: center center !important;
-  color: #fff;
-  a {
-    color: #fff;
-  }
   .watch-now {
     color: #fff;
     font-weight: 400;
     margin-bottom: .375rem;
+  }
+  .footer-button {
+  	border-radius: 5px;
+    background: $purple;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    align-items: center;
   }
 }

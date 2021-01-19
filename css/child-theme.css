@@ -12185,14 +12185,24 @@ a {
 footer {
   background-image: url("/wp-content/themes/ACBC/img/footer.png");
   background-size: cover !important;
-  background-position: center center !important;
-  color: #fff; }
-  footer a {
-    color: #fff; }
+  background-position: center center !important; }
   footer .watch-now {
     color: #fff;
     font-weight: 400;
     margin-bottom: .375rem; }
+  footer .footer-button {
+    border-radius: 5px;
+    background: #6f42c1;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 /*
 * Use existing Bootstrap 4 classes and
